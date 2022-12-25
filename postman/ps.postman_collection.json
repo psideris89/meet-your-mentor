@@ -1,0 +1,206 @@
+{
+	"info": {
+		"_postman_id": "502b7038-b074-45c5-98cb-ad2b2c42d1d7",
+		"name": "ps",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20190925"
+	},
+	"item": [
+		{
+			"name": "courses",
+			"item": [
+				{
+					"name": "Get course by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/courses/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"courses",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get course by title",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/courses/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"courses",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all courses",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/courses/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"courses",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create course",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"c\",\n    \"displayTitle\": \"C\",\n    \"type\": \"back-end\",\n    \"description\": \"some text here\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/courses",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete course by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/courses/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"courses",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "mentors",
+			"item": [
+				{
+					"name": "Get mentor by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/mentors/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mentors",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all mentors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/mentors",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mentors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create mentor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"PS\",\n    \"email\": \"ps@test.com\",\n    \"specialty\": \"full stack\",\n    \"description\": \"Exceptional mentor\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/mentors",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mentors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete mentor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/mentors/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mentors",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

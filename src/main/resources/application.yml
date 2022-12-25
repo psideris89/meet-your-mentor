@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    username: postgres
+    password: postgres
+    url: jdbc:postgresql://127.0.0.1:5432/mym
+  flyway:
+    user: postgres
+    password: postgres
+    schemas: postgres
+    url: jdbc:postgresql://127.0.0.1:5432/mym
