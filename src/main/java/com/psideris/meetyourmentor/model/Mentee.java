@@ -1,7 +1,6 @@
 package com.psideris.meetyourmentor.model;
 
 import com.psideris.meetyourmentor.model.dto.MenteeDto;
-import com.psideris.meetyourmentor.model.dto.MentorDto;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
