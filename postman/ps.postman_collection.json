@@ -201,6 +201,94 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "mentees",
+			"item": [
+				{
+					"name": "Get mentee by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/mentees/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mentees",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all mentees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/mentees",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mentees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create mentee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"PS\",\n    \"email\": \"ps@test.com\",\n    \"specialty\": \"full stack\",\n    \"description\": \"Exceptional mentor\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/mentees",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mentees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete mentee",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/mentees/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mentees",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
