@@ -7,7 +7,7 @@ function hydrate() {
     hydrateRoot(
       document,
       <StrictMode>
-        <RemixBrowser />
+        <RemixBrowser/>
       </StrictMode>
     );
   });

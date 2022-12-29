@@ -5,4 +5,4 @@ type Course = {
   description: string;
 }
 
-export type {Course}
+export type { Course }
