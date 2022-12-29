@@ -7,6 +7,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import { Navbar } from "~/components/Navbar";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -21,7 +22,8 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body style={{margin: 0, padding: 0}}>
+        <Navbar />
         <Outlet />
         <ScrollRestoration />
         <Scripts />
