@@ -1,6 +1,8 @@
+import { pageTitleStyle } from "~/styles";
+
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
+    <div style={pageTitleStyle}>
       <h1>About page</h1>
     </div>
   );

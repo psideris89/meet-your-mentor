@@ -1,6 +1,8 @@
+import { pageTitleStyle } from "~/styles";
+
 export default function Mentors() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
+    <div style={pageTitleStyle}>
       <h1>I am a Mentor</h1>
     </div>
   );
