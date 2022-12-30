@@ -6,4 +6,6 @@ const pageTitleStyle: CSSProperties | undefined = {
   textAlign: "center"
 }
 
-export { pageTitleStyle }
+const bodyStyle: CSSProperties | undefined = { margin: 0, padding: 0 }
+
+export { pageTitleStyle, bodyStyle }

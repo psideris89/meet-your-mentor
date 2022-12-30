@@ -1,4 +1,4 @@
-import { Link } from "@remix-run/react";
+import { Link, useLocation } from "@remix-run/react";
 
 type NavLink = {
   name: string;
@@ -13,11 +13,13 @@ const navLinks: NavLink[] = [
 ]
 
 function Navbar() {
+  const { pathname } = useLocation();
+
   return <div style={{ backgroundColor: "#c8c8ff", height: "80px" }}>
     <nav style={{ display: "flex", justifyContent: "space-between" }}>
       <div style={{ display: "flex", flex: "2 1 auto" }}>
         <Link to="/" style={{ margin: "0 30px", paddingTop: "17px" }}>
-          <img src="/logo.svg" alt="My logo" style={{ width: "42px"}}/>
+          <img src="/logo.svg" alt="My logo" style={{ width: "42px" }}/>
         </Link>
         <p style={{ fontSize: "32px", margin: "20px 0" }}>Meet your mentor</p>
       </div>
@@ -30,7 +32,7 @@ function Navbar() {
       }}>
         {navLinks.map(o =>
           <li key={o.name}>
-            <Link style={{ textDecoration: "none", color: "inherit" }} to={o.to}>
+            <Link to={o.to} style={{ textDecoration: o.to === pathname ? "underline" : "none", color: "inherit", }}>
               <p style={{ fontSize: "20px" }}>{o.name}</p>
             </Link>
           </li>)}

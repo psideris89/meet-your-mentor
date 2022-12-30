@@ -14,7 +14,7 @@ export default function Index() {
       <p>This is the place to connect with people who are interested either in mentoring or being mentored</p>
       <ul style={{ listStyle: "none" }}>
         {sectionLinks.map(o =>
-          <li>
+          <li key={o.name}>
             <Link to={o.to} style={{ color: "inherit" }}>
               {o.name}
             </Link>
