@@ -1,4 +1,4 @@
-import { pageTitleStyle } from "~/../../../styles";
+import { pageTitleStyle } from "~/styles";
 
 export default function Index() {
   return (

@@ -13,12 +13,13 @@ export default function Courses() {
   return (
     <div style={pageTitleStyle}>
       <h1>Our Courses</h1>
-      <ul>
+      <ul style={{textAlign: "left"}}>
         {courses.map(c =>
           <li key={c.id}>
             <>
-              <p>{c.displayTitle}</p>
-              {c.description}
+              <p><i>Title</i>: <b>{c.displayTitle}</b></p>
+              <p><i>Type</i>: <b>{c.type}</b></p>
+              <p><i>Info</i>: <b>{c.description}</b></p>
             </>
           </li>)}
       </ul>

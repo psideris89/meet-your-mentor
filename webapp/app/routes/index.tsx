@@ -2,8 +2,8 @@ import { Link } from "@remix-run/react";
 import { pageTitleStyle } from "~/styles";
 
 const sectionLinks = [
-  { name: "I am a mentor", to: "/mentors" },
-  { name: "I want to find a mentor", to: "/mentees" },
+  { name: "Check out our mentors", to: "/mentors" },
+  { name: "Check out our mentees", to: "/mentees" },
   { name: "Our courses", to: "/courses" }
 ]
 
