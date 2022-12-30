@@ -1,4 +1,3 @@
-import { adminButtonStyle } from "~/styles";
 import { useNavigate } from "@remix-run/react";
 
 function CreateResourcePrompt({ to, message, buttonMessage }: {
@@ -10,7 +9,7 @@ function CreateResourcePrompt({ to, message, buttonMessage }: {
 
   return <>
     <p>{message}</p>
-    <button onClick={() => navigate(to)} style={adminButtonStyle}>{buttonMessage}</button>
+    <button onClick={() => navigate(to)} className="primary-button">{buttonMessage}</button>
   </>
 }
 

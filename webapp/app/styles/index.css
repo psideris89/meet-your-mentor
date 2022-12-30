@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-title {
+    font-family: system-ui, sans-serif;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.admin-input {
+    padding: 10px 20px;
+    border-radius: 0.25rem;
+    margin-bottom: 10px;
+    border: 0.2px solid lightcoral;
+}
+
+.primary-button {
+    padding: 15px 20px;
+    border-radius: 0.25rem;
+    border: none;
+    margin-bottom: 10px;
+    background-color: #c8c8ff;
+}
+
+.primary-button:hover{
+    font-size: 14px;
+}

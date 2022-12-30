@@ -1,5 +1,4 @@
 import { Link } from "@remix-run/react";
-import { pageTitleStyle } from "~/styles";
 
 const sectionLinks = [
   { name: "Check out our mentors", to: "/mentors" },
@@ -9,7 +8,7 @@ const sectionLinks = [
 
 export default function Index() {
   return (
-    <div style={pageTitleStyle}>
+    <div className="main-title">
       <h1>Welcome to Meet Your Mentor</h1>
       <p>This is the place to connect with people who are interested either in mentoring or being mentored</p>
       <ul style={{ listStyle: "none" }}>

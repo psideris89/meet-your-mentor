@@ -1,8 +1,6 @@
-import { pageTitleStyle } from "~/styles";
-
 export default function Index() {
   return (
-    <div style={pageTitleStyle}>
+    <div className="main-title">
       <h1>About page</h1>
     </div>
   );

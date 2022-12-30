@@ -1,4 +1,3 @@
-import { pageTitleStyle } from "~/styles";
 import { json } from "@remix-run/node";
 import { getMentors } from "~/server";
 import { useLoaderData } from "@remix-run/react";
@@ -12,7 +11,7 @@ export default function Mentors() {
   const { mentors } = useLoaderData<typeof loader>();
 
   return (
-    <div style={pageTitleStyle}>
+    <div className="main-title">
       <h1>Our Mentors</h1>
       {mentors?.length === 0 ?
         <CreateResourcePrompt

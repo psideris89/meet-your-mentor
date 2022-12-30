@@ -1,4 +1,3 @@
-import { pageTitleStyle } from "~/styles";
 import { MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
 
@@ -17,7 +16,7 @@ const sectionLinks = [
 
 export default function Admin() {
   return (
-    <div style={pageTitleStyle}>
+    <div className="main-title">
       <h1>Admin page</h1>
       <ul style={{ listStyle: "none" }}>
         {sectionLinks.map(o =>

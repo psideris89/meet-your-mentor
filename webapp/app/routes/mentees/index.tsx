@@ -1,4 +1,3 @@
-import { pageTitleStyle } from "~/styles";
 import { json } from "@remix-run/node";
 import { getMentees } from "~/server";
 import { useLoaderData } from "@remix-run/react";
@@ -12,7 +11,7 @@ export default function Mentees() {
   const { mentees } = useLoaderData<typeof loader>();
 
   return (
-    <div style={pageTitleStyle}>
+    <div className="main-title">
       <h1>Our Mentees</h1>
       {mentees?.length === 0 ?
         <CreateResourcePrompt

@@ -1,7 +1,6 @@
 import { json } from "@remix-run/node";
 import { getCourses } from "~/server";
 import { useLoaderData } from "@remix-run/react";
-import { pageTitleStyle } from "~/styles";
 import { CreateResourcePrompt } from "~/components/CreateResourcePrompt";
 
 export const loader = async () => {
@@ -12,7 +11,7 @@ export default function Courses() {
   const { courses } = useLoaderData<typeof loader>();
 
   return (
-    <div style={pageTitleStyle}>
+    <div className="main-title">
       <h1>Our Courses</h1>
       {courses?.length === 0 ?
         <CreateResourcePrompt

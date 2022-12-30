@@ -1,4 +1,3 @@
-import { adminButtonStyle, adminInputStyle, pageTitleStyle } from "~/styles";
 import { ActionArgs } from "@remix-run/node";
 import { Form } from "@remix-run/react";
 import { redirect } from "@remix-run/router";
@@ -15,19 +14,19 @@ export async function action({ request }: ActionArgs) {
 
 export default function MenteeAdmin() {
   return (
-    <div style={pageTitleStyle}>
+    <div className="main-title">
       <h1>Mentee admin page</h1>
       <section>
         <Form method="post" >
           <label htmlFor="name">
-            <input type="text" name="name" placeholder="name" style={adminInputStyle}/>
+            <input type="text" name="name" placeholder="name" className="admin-input"/>
           </label>
           <br/>
           <label htmlFor="email">
-            <input type="email" name="email" placeholder="email" style={adminInputStyle}/>
+            <input type="email" name="email" placeholder="email" className="admin-input"/>
           </label>
           <br/>
-          <button type="submit" style={adminButtonStyle}>Register Mentee</button>
+          <button type="submit" className="primary-button">Register Mentee</button>
         </Form>
       </section>
     </div>
