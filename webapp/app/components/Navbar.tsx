@@ -12,17 +12,18 @@ const navLinks: NavLink[] = [
 ]
 
 function Navbar() {
-  return <div style={{ backgroundColor: "lightcoral", height: "80px" }}>
+  return <div style={{ backgroundColor: "#c8c8ff", height: "80px" }}>
     <nav style={{ display: "flex", justifyContent: "space-between" }}>
-      <div style={{ display: "flex" }}>
-        <img src="/logo.svg" alt="My logo" style={{ width: "40px", margin: "0 20px" }}/>
+      <div style={{ display: "flex", flex: "2 1 auto" }}>
+        <img src="/logo.svg" alt="My logo" style={{ width: "40px", margin: "0 30px" }}/>
         <p style={{ fontSize: "32px", margin: "20px 0" }}>Meet your mentor</p>
       </div>
-      {/*TODO Remove border*/}
-      <ul style={{ display: "flex", listStyle: "none", justifyContent: "space-between", border: "1px solid blue" }}>
+      <ul style={{ display: "flex", flex: "0.3 1 auto", listStyle: "none", justifyContent: "space-between", margin: "8px 40px 0 0" }}>
         {navLinks.map(o =>
           <li key={o.name}>
-            <Link to={o.to}>{o.name}</Link>
+            <Link style={{textDecoration: "none", color: "inherit"}} to={o.to}>
+              <p style={{fontSize: "20px"}}>{o.name}</p>
+            </Link>
           </li>)}
       </ul>
     </nav>
