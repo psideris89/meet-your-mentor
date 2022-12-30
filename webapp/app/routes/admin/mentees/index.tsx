@@ -2,7 +2,7 @@ import { adminButtonStyle, adminInputStyle, pageTitleStyle } from "~/styles";
 import { ActionArgs } from "@remix-run/node";
 import { Form } from "@remix-run/react";
 import { redirect } from "@remix-run/router";
-import { createMentee } from "~/server/course.server";
+import { createMentee } from "~/server";
 
 export async function action({ request }: ActionArgs) {
   const body = await request.formData();

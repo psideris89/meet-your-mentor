@@ -1,8 +1,7 @@
 import { json } from "@remix-run/node";
-import { getCourses } from "~/server/course.server";
-import { useLoaderData, useNavigate } from "@remix-run/react";
-import { adminButtonStyle, pageTitleStyle } from "~/styles";
-import { NavigateFunction } from "react-router/dist/lib/hooks";
+import { getCourses } from "~/server";
+import { useLoaderData } from "@remix-run/react";
+import { pageTitleStyle } from "~/styles";
 import { CreateResourcePrompt } from "~/components/CreateResourcePrompt";
 
 export const loader = async () => {
@@ -11,7 +10,6 @@ export const loader = async () => {
 
 export default function Courses() {
   const { courses } = useLoaderData<typeof loader>();
-  const navigate = useNavigate();
 
   return (
     <div style={pageTitleStyle}>

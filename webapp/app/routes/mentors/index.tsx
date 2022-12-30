@@ -1,6 +1,6 @@
 import { pageTitleStyle } from "~/styles";
 import { json } from "@remix-run/node";
-import { getMentors } from "~/server/course.server";
+import { getMentors } from "~/server";
 import { useLoaderData } from "@remix-run/react";
 import { CreateResourcePrompt } from "~/components/CreateResourcePrompt";
 
